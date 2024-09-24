@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Donate Bangladesh</title>
 <!-- Font Family -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     <header class="sticky top-0 z-10">
         <div class="navbar bg-[#F9F7F3] p-[30px]">
             <div class="navbar-start">
-                <button class="btn bg-[#B4F461]">Blog</button>
+                <button id="blog-btn" class="btn bg-[#B4F461]">Blog</button>
             </div>
             <div class="navbar-center flex flex-row gap-[15px]">
                 <img src="assets/logo.png" alt="donate logo">
@@ -85,19 +85,19 @@
         <div class="card lg:card-side bg-base-100 shadow-xl max-w-[1140px] border-solid border-[1px] border-[#11111179] p-[32px] mt-[32px]">
             <figure class="w-full lg:w-2/4">
               <img
-                src="assets/noakhali.png"
+                src="assets/feni.png"
                 alt="Album" />
             </figure>
             <div class="card-body flex flex-col justify-start justify-items-start items-start w-full lg:w-2/4">
-                <div class="flex items-center gap-[10px] bg-[#11111125] w-[110px] p-[5px] rounded-[6px]">
+                <div class="flex items-center gap-[10px] bg-[#11111125] p-[5px] rounded-[6px]">
                     <img src="assets/coin.png" alt="coin">
                     <div class="flex gap-[5px]">
                         <p id="get-money2">0</p>
-                        <p>BDT</p>
+                        <p class="pr-[10px]">BDT</p>
                     </div>
                 </div>
-              <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-              <p class="text-[#111111b0] pb-[15px]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+              <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
+              <p class="text-[#111111b0] pb-[15px]"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
     
               <div class="card w-full shrink-0">
                 <form class="">
@@ -122,19 +122,19 @@
         <div class="card lg:card-side bg-base-100 shadow-xl max-w-[1140px] border-solid border-[1px] border-[#11111179] p-[32px] mt-[32px]">
             <figure class="w-full lg:w-2/4">
               <img
-                src="assets/noakhali.png"
+                src="assets/quota-protest.png"
                 alt="Album" />
             </figure>
             <div class="card-body flex flex-col justify-start justify-items-start items-start w-full lg:w-2/4">
-                <div class="flex items-center gap-[10px] bg-[#11111125] w-[110px] p-[5px] rounded-[6px]">
+                <div class="flex items-center gap-[10px] bg-[#11111125] p-[5px] rounded-[6px]">
                     <img src="assets/coin.png" alt="coin">
                     <div class="flex gap-[5px]">
                         <p id="get-money3">0</p>
-                        <p>BDT</p>
+                        <p class="pr-[10px]">BDT</p>
                     </div>
                 </div>
-              <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-              <p class="text-[#111111b0] pb-[15px]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+              <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
+              <p class="text-[#111111b0] pb-[15px]"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
     
               <div class="card w-full shrink-0">
                 <form class="">
@@ -156,21 +156,27 @@
     </section>
 
     <!-- history -->
-    <div class="h-[100vh]">
+       <div class="h-[100vh]">
         <section id="history" class="hidden">
-            <div class="history p-[30xp] flex flex-col">
+            <div id="history-container" class="history m-auto max-w-[700px] p-[30xp] flex flex-col">
     
             </div>
         </section>
-    </div>
+       </div>
   </main>
 
 
-    <footer class="footer footer-center bg-[#F9F7F3] text-base-content p-12 mt-[60px]">
+    <footer class="footer footer-center  bg-[#F9F7F3] text-base-content p-12 mt-[60px] ">
         <aside>
           <p>Copyright © Donate banglades - All right reserved by ACME Industries Ltd</p>
         </aside>
     </footer>
+
+   <div id="my_modal_1" class="p-[30px] bg-slate-300 flex flex-col justify-center justify-items-center gap-3 shadow-md w-[320px] fixed top-[40%] z-50 right-[45%] hidden ">
+        <p class="text-center">Successfully donated</p>
+
+        <button id="close-modal" class="btn">Close</button>
+   </div>
  
     <script src="js/library.js"></script>
     <script src="js/calculation.js"></script>

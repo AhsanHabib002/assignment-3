@@ -31,3 +31,9 @@ function activeMode(id){
     document.getElementById(id).classList.add('bg-[#B4F461]');
     document.getElementById(id).classList.remove('btn-outline');
 }
+
+// modal
+function showModal() {
+    document.getElementById('my_modal_1').classList.remove('hidden'); // Show modal
+    document.getElementById('my_modal_1').classList.add('flex');     // Ensure it's visible
+  }
