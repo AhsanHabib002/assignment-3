@@ -136,5 +136,20 @@ document.getElementById('blog-btn')
   .addEventListener('click', function(){
     window.location.href = 'blog.html'
   })
+// navbar
+
+window.addEventListener('scroll', function(){
+    if(window.scrollY>40){
+        document.getElementById('navbar').classList.add('backdrop-blur-md');
+        document.getElementById('nav-top').classList.remove('bg-[#F9F7F3]');
+        document.getElementById('nav-btm').classList.remove('bg-white');
 
 
+    }
+
+    else{
+        document.getElementById('navbar').classList.remove('backdrop-blur-md');
+        document.getElementById('nav-top').classList.add('bg-[#F9F7F3]');
+        document.getElementById('nav-btm').classList.add('bg-white');
+    }
+})

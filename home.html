@@ -17,17 +17,17 @@
 </head>
 <body class="lexend">
 
-    <header class="sticky top-0 z-10">
-        <div class="navbar bg-[#F9F7F3] p-[30px]">
+    <header id="navbar" class="sticky top-0 z-10">
+        <div id="nav-top" class="navbar bg-[#F9F7F3] p-[30px] flex flex-col md:flex-row">
             <div class="navbar-start">
-                <button id="blog-btn" class="btn bg-[#B4F461]">Blog</button>
+                <button id="blog-btn" class="btn bg-[#B4F461] mx-auto md:mx-0">Blog</button>
             </div>
             <div class="navbar-center flex flex-row gap-[15px]">
                 <img src="assets/logo.png" alt="donate logo">
               <a class="text-xl font-semibold">Donate bangladesh</a>
             </div>
             <div class="navbar-end">
-                <div class="flex flex-row gap-[12px]">
+                <div class="flex flex-row gap-[12px] mx-auto md:mx-0">
                     <img src="assets/coin.png" alt="coin">
                     <p id="account-balance" class="font-semibold ">9000</p>
                     <p class="font-semibold ">BDT</p>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <!-- Donation & history features -->
-        <div class="flex flex-col justify-center gap-[15px] py-[30px] md:flex-row gap-[15px] bg-white">
+        <div id="nav-btm" class="flex flex-col justify-center gap-[15px] py-[30px] md:flex-row gap-[15px] bg-white">
             <button id="tg-donate" class="btn bg-[#B4F461]">Donate</button>
             <button id="tg-history" class="btn btn-outline">History</button>
         </div>
