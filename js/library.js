@@ -3,3 +3,11 @@ function getInputValuById(id){
     const inputMoneyNumber = parseFloat(inputValue)
     return inputMoneyNumber;
 }
+
+// for text value
+
+function getTextValuById(id){
+    const textValue = document.getElementById(id).innerText;
+    const textMoneyNumber = parseFloat(textValue)
+    return textMoneyNumber;
+}
